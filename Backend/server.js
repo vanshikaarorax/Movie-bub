@@ -30,10 +30,10 @@ app.use("/api/v1/tv", protectedRoute, tvRouter);
 app.use("/api/v1/search", protectedRoute, searchRouter);
 
 if (ENV_VARS.NODE_ENV === "production") {
-	app.use(express.static(path.join(__dirname, "/frontend/dist")));//converting the app into static so both fron and back can be deployed together
+	app.use(express.static(path.join(__dirname, "/Frontend/dist")));//converting the app into static so both fron and back can be deployed together
 
 	app.get("*", (req, res) => {
-		res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));//this is so tha if any other host other than the 5173 is hit then it is defined to show them the react project
+		res.sendFile(path.resolve(__dirname, "Frontend", "dist", "index.html"));//this is so tha if any other host other than the 5173 is hit then it is defined to show them the react project
 	});
 }
 // Start server
