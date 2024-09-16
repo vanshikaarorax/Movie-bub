@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 npm run build 
 npm run start
-![Alt text](/no1.png)
+![Alt text](no1.png)
 ![Alt text](/no2.png)
 ![Alt text](/no3.png)
 ![Alt text](/no4.png)
